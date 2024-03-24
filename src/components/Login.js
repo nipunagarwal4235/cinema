@@ -83,7 +83,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img className="h-screen object-cover" src={BG_URL} alt="logo" />
+        <img className="h-screen w-screen object-cover" src={BG_URL} alt="logo" />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
@@ -122,7 +122,7 @@ const Login = () => {
         </button>
         <p className="py-4 cursor-pointer" onClick={toggleSignInForm}>
           {isSignInForm
-            ? "New to Netflix? Sign Up Now"
+            ? "New here ? Sign Up Now"
             : "Already registered? Sign In Now."}
         </p>
       </form>

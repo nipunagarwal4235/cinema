@@ -14,15 +14,19 @@ const Browse = () => {
   usePopularMovies();
   return (
     <>
-      <Header />
-      {showGptSearch ? (
-        <GptSearch />
-      ) : (
-        <>
-          <MainContainer />
-          <SecondaryContainer />
-        </>
-      )}
+      
+        <Header />
+        {showGptSearch ? (
+          <GptSearch />
+        ) : (
+          <>
+          <div className="overflow-x-hidden no-scrollbar">
+            <MainContainer />
+            <SecondaryContainer />
+            </div>
+          </>
+        )}
+   
     </>
   );
 };
